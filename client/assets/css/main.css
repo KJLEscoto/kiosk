@@ -18,5 +18,5 @@
 }
 
 body {
-  @apply dark:bg-blue-950 bg-white dark:text-blue-900 text-white transition-all duration-150 tracking-wider
+  @apply dark:bg-blue-950 bg-blue-50 text-blue-900 dark:text-white transition-all duration-150 tracking-wide
 }

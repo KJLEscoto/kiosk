@@ -1,7 +1,7 @@
 <template>
   <div class="h-full w-full">
   <div class="absolute top-5 left-5 z-10 flex gap-x-2 items-center">
-    <Logo :iconHeight="10" />
+    <Logo :iconHeight="10" :isBackground="true"/>
     <ToggleDarkMode />
   </div>
 
@@ -17,7 +17,7 @@
     <img :src="item" class="w-full h-screen" draggable="false">
     </UCarousel>
 
-  <UButton to="/year" label="Click to Start" class="bg-yellow-500 hover:bg-yellow-600 text-blue-600 dark:text-blue-50 dark:bg-yellow-600 dark:hover:bg-yellow-700 transition-all duration-100 w-full rounded-none flex justify-center h-40 text-lg font-black"/>
+  <UButton to="/products" label="Click to Start" class="bg-yellow-500 hover:bg-yellow-600 text-blue-500 dark:text-yellow-500 dark:bg-blue-500 dark:hover:bg-blue-600 transition-all duration-100 w-full rounded-none flex justify-center h-40 text-lg font-black"/>
   </div>
 
   </div>

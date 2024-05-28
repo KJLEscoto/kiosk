@@ -3,7 +3,7 @@
     <div class="fixed top-5 left-5 z-10">
       <ToggleDarkMode />
     </div>
-    <UForm :state="state" class="w-[500px] h-auto dark:bg-blue-900 bg-white p-4 rounded flex flex-col gap-5 shadow-xl">
+    <UForm :state="state" class="w-[500px] h-auto dark:bg-blue-900 bg-white p-8 rounded flex flex-col gap-4 shadow-xl">
       <div class="flex justify-center">
         <img src="~/assets/img/sti-logo.png" alt="logo" class="w-auto h-14">
       </div>

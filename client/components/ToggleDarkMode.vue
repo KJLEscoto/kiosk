@@ -19,7 +19,7 @@ const isDark = computed({
         variant="ghost"
         aria-label="Theme"
         @click="isDark = !isDark"
-        class="rounded-full dark:hover:bg-blue-800 hover:bg-blue-100"
+        class="rounded-full dark:hover:bg-blue-600 hover:bg-blue-100 text-yellow-600 hover:text-yellow-700 dark:text-white dark:hover:text-gray-300"
       />
       <template #fallback>
         <div class="w-8 h-8" />

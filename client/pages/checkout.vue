@@ -1,6 +1,6 @@
 <template>
-  <div>
-    uniforms here
+  <div class="flex items-center justify-center">
+    check out
   </div>
 </template>
 

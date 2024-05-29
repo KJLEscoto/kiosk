@@ -1,6 +1,6 @@
 <template>
-  <div>
-    faq
+  <div class="flex items-center justify-center">
+    college
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    pants here
+  <div class="flex items-center justify-center">
+    cart
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    cart
+  <div class="flex items-center justify-center">
+    shs
   </div>
 </template>
 

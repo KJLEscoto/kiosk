@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-yellow-500 p-2 rounded" v-if="isBackground">
+  <div class="bg-yellow-500 p-2 rounded hover:shadow" v-if="isBackground">
     <img src="~/assets/img/sti-logo.png" alt="logo" class="w-auto" :class="iconHeight"/>
   </div>
   <div v-if="!isBackground">

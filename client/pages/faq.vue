@@ -1,6 +1,6 @@
 <template>
-  <div>
-    checkout
+  <div class="flex items-center justify-center">
+    faqs
   </div>
 </template>
 

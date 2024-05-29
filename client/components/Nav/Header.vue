@@ -64,12 +64,13 @@
         <div 
           :class="[
           'grid items-center justify-center py-3 px-2 hover:bg-blue-200 dark:hover:bg-blue-700 rounded mx-1',
-          { 'bg-blue-300 dark:bg-blue-600': activePath === item.path }
-          ,{'text-yellow-500 dark:text-blue-500 transition duration-200 hover:bg-blue-900 hover:dark:bg-yellow-200': isScrolled }]">
+          { 'bg-blue-300 dark:bg-blue-600': activePath === item.path }]">
           <UChip color="red" :text="item.count" size="2xl" :show="item.count > 0">
-            <UIcon :name="item.icon" :class="['text-2xl dark:text-yellow-500 text-blue-500', {'text-yellow-500 dark:text-blue-600': isScrolled }]"/>
+            <UIcon :name="item.icon" :class="['text-2xl dark:text-yellow-500 text-blue-500', {'text-yellow-500 dark:text-blue-700': isScrolled }]"/>
           </UChip>
-          <p>{{ item.title }}</p>
+          <p :class="['text-blue-900 dark:text-white'
+          ,{'text-yellow-500 dark:text-blue-700 transition duration-200': isScrolled }]">
+          {{ item.title }}</p>
         </div>
       </nuxt-link> 
     </div>

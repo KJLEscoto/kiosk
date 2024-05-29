@@ -3,13 +3,13 @@
 
     <!--v-if length < 0-->
     <section class="flex flex-col gap-20">
-      <div class="flex flex-col gap-5 px-20">
+      <div class="flex flex-col gap-5">
         <section class="flex gap-2 items-center">
           <hr class="w-1/12 border-blue-200">
           <h1 class="font-semibold text-base">Highlights</h1>
           <hr class="w-full border-blue-200">
         </section>
-        <section class="grid grid-cols-4 gap-4 text-blue-800 dark:text-blue-900 w-full">
+        <section class="grid grid-cols-4 gap-4 text-blue-800 dark:text-blue-900 w-full px-20">
           <nuxt-link v-for="(product, index) in products" :to="`/products/${product.id}`" :key="index" class="border p-3 rounded bg-white flex flex-col justify-between gap-2">
               <img :src="product.image" alt="img" class="w-auto h-24 mx-auto">
               <p class="text-sm text-gray-500">{{ product.title }}</p>

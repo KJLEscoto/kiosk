@@ -1,5 +1,5 @@
 <template>
-  <header :class="['flex cursor-default justify-between h-auto p-5 fixed w-full px-20 top-0 transition-all duration-300', {'bg-blue-800 dark:bg-yellow-500 shadow-lg': isScrolled}]">
+  <header :class="['flex cursor-default justify-between h-auto p-5 fixed w-full px-20 top-0 transition-all duration-300', {'bg-blue-800 dark:bg-blue-700 shadow-lg': isScrolled}]">
     <div class="flex gap-2 items-center">
       <nuxt-link to="/products">
         <Logo :iconHeight="10"/>
@@ -69,7 +69,7 @@
             <UIcon :name="item.icon" :class="['text-2xl dark:text-yellow-500 text-blue-500', {'text-yellow-500 dark:text-blue-700': isScrolled }]"/>
           </UChip>
           <p :class="['text-blue-900 dark:text-white'
-          ,{'text-yellow-500 dark:text-blue-700 transition duration-200': isScrolled }]">
+          ,{'text-white dark:text-blue-700 transition duration-200': isScrolled }]">
           {{ item.title }}</p>
         </div>
       </nuxt-link> 

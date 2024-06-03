@@ -8,9 +8,11 @@ export default defineNuxtConfig({
   css: [
     "~/assets/css/main.css"
   ],
-  // ui: {
-  //   icons: ["lucide"]
-  // },
+  ui: {
+    icons: [
+      "bi",
+    ]
+  },
   tailwindcss: {
     config: {
       theme: {

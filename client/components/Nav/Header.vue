@@ -1,5 +1,5 @@
 <template>
-  <header :class="['flex cursor-default justify-between h-auto p-5 fixed w-full px-20 top-0 transition-all duration-300', {'bg-blue-800 dark:bg-blue-700 shadow-lg': isScrolled}]">
+  <header :class="['flex cursor-default justify-between h-auto p-5 fixed w-full px-20 top-0 transition-all duration-300 z-50', {'bg-blue-900 dark:bg-blue-800 shadow-lg': isScrolled}]">
     <div class="flex gap-2 items-center">
       <nuxt-link to="/products">
         <Logo :iconHeight="10"/>
@@ -54,23 +54,23 @@
         </template>
       </UInput>
     </div>
-    <div class="items-center flex justify-center">
+    <div class="items-center flex justify-center gap-x-5">
       <nuxt-link 
         :to="item.path" 
         v-for="(item, index) in items" 
         :key="index" 
         class="font-semibold"
+        active-class="opacity-50"
       >
-        <div 
-          :class="[
-          'grid items-center justify-center py-3 px-2 hover:bg-blue-200 dark:hover:bg-blue-700 rounded mx-1',
-          { 'bg-blue-300 dark:bg-blue-600': activePath === item.path }]">
+        <div class="grid items-center justify-center hover:opacity-50 rounded">
           <UChip color="red" :text="item.count" size="2xl" :show="item.count > 0">
             <UIcon :name="item.icon" :class="['text-2xl dark:text-yellow-500 text-blue-500', {'text-yellow-500 dark:text-blue-700': isScrolled }]"/>
           </UChip>
-          <p :class="['text-blue-900 dark:text-white'
-          ,{'text-white dark:text-blue-700 transition duration-200': isScrolled }]">
-          {{ item.title }}</p>
+          <p 
+            :class="['text-blue-900 dark:text-white'
+            ,{'text-white dark:text-blue-700 transition duration-200': isScrolled }]">
+            {{ item.title }}
+          </p>
         </div>
       </nuxt-link> 
     </div>
@@ -79,29 +79,21 @@
 
 <script setup>
 
-const route = useRoute();
-
 const items = [
   {
-    icon: 'i-heroicons-shopping-cart-16-solid',
+    icon: 'i-bi-cart',
     title: 'Cart',
     count: 5,
     path: '/cart'
   },
   {
-    icon: 'i-heroicons-shopping-bag-20-solid',
-    title: 'Check out',
-    count: 0,
-    path: '/checkout'
-  },
-  {
-    icon: 'i-heroicons-information-circle-20-solid',
+    icon: 'i-bi-exclamation-circle',
     title: 'FAQs',
     count: 0,
     path: '/faq',
   },
   {
-    icon: 'i-heroicons-arrow-right-start-on-rectangle-16-solid',
+    icon: 'i-bi-box-arrow-right',
     title: 'Exit',
     count: 0,
     path: '/',
@@ -135,14 +127,4 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
 });
 
-
-const activePath = ref(route.path);
-
-watch(
-  () => route.path,
-  (newPath) => {
-    activePath.value = newPath;
-  },
-  { immediate: true }
-);
 </script>

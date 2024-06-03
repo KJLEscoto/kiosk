@@ -21,10 +21,13 @@
       draggable="false" >
     </UCarousel>
 
-  <UButton 
-    to="/products" 
-    label="Click to Start" 
-    class="bg-yellow-500 hover:bg-yellow-600 text-blue-500 dark:text-yellow-500 dark:bg-blue-500 dark:hover:bg-blue-600 transition-all duration-100 w-full rounded-none flex justify-center h-40 text-lg font-black"/>
+  <UButton
+    to="/products"
+    :label="loadLabel" 
+    class="bg-yellow-500 hover:bg-yellow-500 hover:bg-opacity-75 text-blue-500 dark:text-yellow-500 dark:bg-blue-500 dark:hover:bg-blue-600 transition-all duration-100 w-full rounded-none flex justify-center h-40 text-lg font-black"
+    @click="handleClick" 
+    :loading-icon="loadIcon"
+    :loading="loading" />
   </div>
 
   </div>
@@ -53,5 +56,20 @@ onMounted(() => {
   carouselRef.value.next()
   }, 2500)
 })
+
+const loading = ref(false);
+const loadIcon = ref('')
+const loadLabel = ref('Click to Start')
+
+const handleClick = () => {
+  loading.value = true;
+  loadLabel.value = '';
+  loadIcon.value = 'i-lucide-loader-circle'
+  setTimeout(() => {
+    navigateTo('/products');
+    loading.value = false;
+    loadLabel.value = 'Click to Start';
+  }, 800);
+};
 </script>
   

@@ -6,8 +6,9 @@
     <NavHeader />
   </header>
   
-  <section class="z-0 mb-20 w-full h-auto">
+  <section class="z-0 w-full h-auto">
     <slot />
+    <Footer />
   </section>
   
 </section>

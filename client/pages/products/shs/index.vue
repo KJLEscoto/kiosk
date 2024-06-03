@@ -6,7 +6,7 @@
 
 <script setup>
 definePageMeta({
-  layout: 'navigations'
+  layout: 'client'
 });
 
 </script>

@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-center justify-center">
-    college
+  <div class="flex justify-center">
+    checkout
   </div>
 </template>
 
@@ -8,5 +8,4 @@
 definePageMeta({
   layout: 'client'
 });
-
 </script>

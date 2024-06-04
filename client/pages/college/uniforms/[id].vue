@@ -1,7 +1,7 @@
 <template>
   <ProductDetail
-    :back-link="'/products'"
-    :back-text="'Products'"
+    :back-link="'/college/uniforms'"
+    :back-text="'College Uniforms'"
     :product="product"
     :loading="loading"
   />
@@ -10,7 +10,7 @@
 <script setup>
 
 definePageMeta({
-  layout: 'client'
+  layout: 'client-college'
 })
 
 const route = useRoute()

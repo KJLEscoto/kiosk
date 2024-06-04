@@ -64,7 +64,7 @@ const loadLabel = ref('Click to Start')
 const handleClick = () => {
   loading.value = true;
   loadLabel.value = '';
-  loadIcon.value = 'i-lucide-loader-circle'
+  loadIcon.value = 'i-bi-arrow-clockwise'
   setTimeout(() => {
     navigateTo('/products');
     loading.value = false;

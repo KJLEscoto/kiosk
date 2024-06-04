@@ -1,5 +1,5 @@
 <template>
-  <header :class="['flex cursor-default justify-between h-auto p-5 fixed w-full px-20 top-0 transition-all duration-300 z-50', {'bg-blue-900 dark:bg-blue-800 shadow-lg': isScrolled}]">
+  <header :class="['flex cursor-default justify-between h-auto p-5 fixed w-full px-20 top-0 transition-all duration-200 z-50', {'bg-blue-900 dark:bg-blue-800 shadow-lg': isScrolled}]">
     <div class="flex gap-2 items-center">
       <nuxt-link to="/products">
         <Logo :iconHeight="10"/>

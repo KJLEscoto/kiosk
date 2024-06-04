@@ -1,7 +1,7 @@
 <template>
   <ProductDetail
-    :back-link="'/products'"
-    :back-text="'Products'"
+    :back-link="'/shs/uniforms'"
+    :back-text="'SHS Uniforms'"
     :product="product"
     :loading="loading"
   />

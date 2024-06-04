@@ -84,11 +84,11 @@ const navs = [
     },
     {
       label: 'Senior High',
-      path: '/products/shs'
+      path: '/shs'
     },
     {
       label: 'College',
-      path: '/products/college'
+      path: '/college'
     },
   ],
   [

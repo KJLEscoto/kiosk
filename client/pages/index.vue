@@ -1,10 +1,10 @@
 <template>
   <div class="h-full w-full">
   <div class="absolute top-5 left-5 z-10 flex gap-x-2 items-center">
-    <ClientLogo 
+    <Logo 
       :iconHeight="10" 
       :isBackground="true" />
-    <ClientToggleDarkMode />
+    <ToggleDarkMode />
   </div>
 
   <div class="w-full h-screen flex flex-col justify-between">

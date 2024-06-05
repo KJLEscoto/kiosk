@@ -80,25 +80,25 @@ const navs = [
   [
     {
       label: 'All Products',
-      path: '/products'
+      path: '/kiosk/products'
     },
     {
       label: 'Senior High',
-      path: '/shs'
+      path: '/kiosk/shs'
     },
     {
       label: 'College',
-      path: '/college'
+      path: '/kiosk/college'
     },
   ],
   [
     {
       label: 'Cart',
-      path: '/cart'
+      path: '/kiosk/cart'
     },
     {
       label: 'FAQs',
-      path: '/faq'
+      path: '/kiosk/faq'
     },
   ]
 ];

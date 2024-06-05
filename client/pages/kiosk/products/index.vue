@@ -22,6 +22,7 @@
       </div>
       
       <div class="h-auto w-full mt-20 text-blue-900 bg-white dark:bg-blue-900 py-10">
+        <h1 class="font-bold px-20 text-xl text-blue-900 dark:text-white">SHOP BY</h1>
         <section class="flex gap-2 items-center">
           <hr class="w-1/12 border-blue-200 dark:border-blue-700">
           <h1 class="font-bold text-base dark:text-white">Programs</h1>
@@ -32,7 +33,7 @@
             <img class="w-auto h-auto rounded-t" src="~/assets/img/shs-2.jpg" alt="shs">
             <div class="flex justify-between items-center">
               <h1 class="font-semibold">Senior High Merch</h1>
-              <UButton to="/shs" class="flex items-center rounded hover:opacity-50 gap-x-1 bg-yellow-600 hover:bg-yellow-600 dark:bg-yellow-600 dark:text-white dark:hover:bg-yellow-600 dark:hover:bg-opacity-50">
+              <UButton to="/kiosk/shs" class="flex items-center rounded hover:opacity-50 gap-x-1 bg-yellow-600 hover:bg-yellow-600 dark:bg-yellow-600 dark:text-white dark:hover:bg-yellow-600 dark:hover:bg-opacity-50">
                 <p class="text-sm">View Products</p>
                 <UIcon name="i-bi-arrow-bar-right" class="text-lg"/>
               </UButton>
@@ -42,7 +43,7 @@
             <img class="w-auto h-auto rounded-t" src="~/assets/img/college-1.jpg" alt="college">
             <div class="flex justify-between items-center">
               <h1 class="font-semibold">College Merch</h1>
-              <UButton to="/college" class="flex items-center rounded hover:opacity-50 gap-x-1 bg-blue-500 hover:bg-blue-500 dark:text-white dark:bg-blue-500 dark:hover:bg-blue-500 dark:hover:bg-opacity-50">
+              <UButton to="/kiosk/college" class="flex items-center rounded hover:opacity-50 gap-x-1 bg-blue-500 hover:bg-blue-500 dark:text-white dark:bg-blue-500 dark:hover:bg-blue-500 dark:hover:bg-opacity-50">
                 <p class="text-sm">View Products</p>
                 <UIcon name="i-bi-arrow-bar-right" class="text-lg"/>
               </UButton>

@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen w-full flex items-center justify-center">
     <div class="fixed top-5 left-5 z-10">
-      <ToggleDarkMode />
+      <ClientToggleDarkMode />
     </div>
     <UForm :state="state" class="w-[500px] h-auto dark:bg-blue-900 bg-white p-8 rounded flex flex-col gap-4 shadow-xl">
       <div class="flex justify-center">
@@ -32,7 +32,7 @@
           class="w-full bg-blue-50 p-2 rounded border-2 border-blue-100 transition-all duration-300 outline-none focus:border-blue-700 dark:focus:border-blue-500 mt-1 text-blue-900"/>
       </div>
       <UButton label="Sign in" class="rounded dark:text-white flex justify-center p-3"/>
-      <Divider />
+      <ClientDivider />
       <UButton icon="i-hugeicons-office-365" label="Student and Staff Office 365 Login" class="rounded dark:text-white flex justify-center bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 p-3"/>
     </UForm>
   </div>

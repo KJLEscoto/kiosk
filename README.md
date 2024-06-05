@@ -16,5 +16,5 @@
 - composer install
 - cp .env.example .env
 - php artisan key:generate
-- php artisan migrate --seed
+- php artisan migrate --seed / php artisan migrate:refresh (if existing DB)
 - php artisan serve
